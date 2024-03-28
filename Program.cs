@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 //Add your service dependency here
-builder.Services.AddSingleton<IMailService>(new MailRepository("imap.gmail.com", 993, true, "abdullahtestmail1@gmail.com", "Abdullah_Akhtar1!"));
+builder.Services.AddSingleton<IMailService>(new MailRepository("imap.gmail.com", 993, true, "yourmail@example.com", "yourPasswordHere"));
 
 var app = builder.Build();
 
