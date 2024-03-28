@@ -19,8 +19,8 @@ namespace GmailStackDemo.Services
             this.mailServer ="imap.gmail.com";
             this.port =993;
             this.ssl =true;
-            this.login ="abdullahtestmail1@gmail.com";
-            this.password = "ifdy hoff koua gayc";
+            this.login ="yourmail@example.com";
+            this.password = "yourPasswordHere";
         }
 
         public IEnumerable<string> GetUnreadMails()
