@@ -1,0 +1,30 @@
+﻿@* @model IEnumerable<string> // Specify the model type
+
+@{
+    ViewData["Title"] = "Emails"; // Update the title
+}
+
+<h1>Emails</h1>
+
+<ul>
+    @foreach (var email in Model)
+    {
+        <li>@email</li> <!-- Render each email in a list item -->
+    }
+</ul>
+ *@
+
+ @model IEnumerable<string> // Specify the model type
+
+@{
+    ViewData["Title"] = "Emails"; // Update the title
+}
+
+<h1>Emails</h1>
+
+@foreach (var email in Model)
+{
+    <div>
+        @Html.Raw(email) <!-- Render the HTML content of the email -->
+    </div>
+}
