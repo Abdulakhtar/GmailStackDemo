@@ -39,6 +39,8 @@ Once, you have installed all of the packages, and your visual studio or code is 
       string password = "yourPassword";
       ````
 
+3. Replace your email and password in the _Program.cs_ file as well.
+
 ### Running the Application
 
 You can run the application using the .NET CLI. Navigate to the project directory and execute the following command:
